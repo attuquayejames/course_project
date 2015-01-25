@@ -1,0 +1,24 @@
+Introduction:
+
+The run_analysis.R carries out the five task requested in this project
+
+1. First, all the similar data is merged using the rbind() function. 
+2. Now, only those columns with the mean and standard deviation measures are taken from the whole dataset.
+After extracting these columns, they are given the correct names, taken from features.txt.
+3. Descriptive activity names are used to name the activities in the data set and appropriately labels for 
+the data set with descriptive activity names using activity_labels.txt
+4. Finally, we generate a new dataset with all the average measures for each subject and activity type 
+
+Variables:
+
+1. train_x, train_y, test_x, test_y, train_subject, test_subject are used as variable names to store
+the test and training sets we will merge.
+
+2. x, y and z are variable names of the binded sets of train_x and test_x, train_y and test_y and 
+train_subject and test_subject respectively.
+
+3. The variable "features" contains the correct names for x
+4. Similar approach is taken with activity names through the activities variable.
+5. "tidy_Data" merges x, y and z as one dataset.
+6. Lastly, we creates a second, independent tidy data set with the average of each variable for each activity 
+and each subject and store the in a table called "tidy_mean_Data"
